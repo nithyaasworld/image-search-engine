@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 100vh;
+}
+.input-boxes{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  gap: 1em;
+  padding: 2em;
+}
+.login-buttons{
+  display: flex;
+  gap: 2em;
+}
+button{
+  background-color: goldenrod;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.router-link{
+  text-decoration: none;
+  color: black;
+}
+.button-disabled{
+  pointer-events: none;
+  opacity: 0.4;
+}
