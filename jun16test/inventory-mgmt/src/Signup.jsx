@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { firebaseAuth } from "./firebase-config";
 
 export default function SignUp() {
@@ -6,6 +6,10 @@ export default function SignUp() {
     let [password, setPassword] = useState("");
     let [confirmPassword, setConfirmaPassword] = useState("");
     // let [disabled, setDisabled] = useState(true);
+
+    useEffect(()=>{
+        console.log(email);
+    }, [email]);
   
     const signupFunction = (email , password) => {
         console.log('signupFunction is called');
